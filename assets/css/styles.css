@@ -42,11 +42,29 @@ h1 {
   width: 80%;
 }
 
+/* img {
+  width: 100%;
+  height: auto;
+} */
+
 .wrapper {
   background-color: hsl(233, 47%, 7%);
   display: flex;
   justify-content: center;
   height: 100vh;
+}
+
+.header-img {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(277, 64%, 61%, 0.603),
+      hsla(277, 64%, 61%, 0.479)
+    ),
+    url(../../images/image-header-desktop.jpg);
+  height: 100%;
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+  background-size: cover;
 }
 
 .card {
@@ -97,15 +115,6 @@ h1 {
     display: none;
   }
 
-  .desktop-img {
-    border-radius: 0 5px 5px 0;
-    background: linear-gradient(
-      to right bottom,
-      hsla(277, 64%, 61%, 0.534),
-      hsla(277, 64%, 61%, 0.521)
-    );
-  }
-
   .stats {
     gap: 5.2rem;
   }
@@ -113,6 +122,10 @@ h1 {
   .description {
     width: 90%;
     margin-bottom: 5rem;
+  }
+
+  .content {
+    flex-grow: 0;
   }
 }
 
